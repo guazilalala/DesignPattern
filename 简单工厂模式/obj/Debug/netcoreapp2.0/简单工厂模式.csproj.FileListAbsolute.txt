@@ -1,0 +1,11 @@
+d:\GitHub\设计模式\简单工厂模式\bin\Debug\netcoreapp2.0\简单工厂模式.deps.json
+d:\GitHub\设计模式\简单工厂模式\bin\Debug\netcoreapp2.0\简单工厂模式.runtimeconfig.json
+d:\GitHub\设计模式\简单工厂模式\bin\Debug\netcoreapp2.0\简单工厂模式.runtimeconfig.dev.json
+d:\GitHub\设计模式\简单工厂模式\bin\Debug\netcoreapp2.0\简单工厂模式.dll
+d:\GitHub\设计模式\简单工厂模式\bin\Debug\netcoreapp2.0\简单工厂模式.pdb
+d:\GitHub\设计模式\简单工厂模式\obj\Debug\netcoreapp2.0\简单工厂模式.csproj.CoreCompileInputs.cache
+d:\GitHub\设计模式\简单工厂模式\obj\Debug\netcoreapp2.0\简单工厂模式.AssemblyInfoInputs.cache
+d:\GitHub\设计模式\简单工厂模式\obj\Debug\netcoreapp2.0\简单工厂模式.AssemblyInfo.cs
+d:\GitHub\设计模式\简单工厂模式\obj\Debug\netcoreapp2.0\简单工厂模式.dll
+d:\GitHub\设计模式\简单工厂模式\obj\Debug\netcoreapp2.0\简单工厂模式.pdb
+D:\GitHub\设计模式\简单工厂模式\obj\Debug\netcoreapp2.0\简单工厂模式.csprojResolveAssemblyReference.cache
