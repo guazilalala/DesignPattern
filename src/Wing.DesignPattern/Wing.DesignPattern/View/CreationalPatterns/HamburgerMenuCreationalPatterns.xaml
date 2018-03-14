@@ -1,0 +1,162 @@
+﻿<UserControl x:Class="Wing.DesignPattern.View.CreationalPatterns.HamburgerMenuCreationalPatterns"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
+             xmlns:converters="http://metro.mahapps.com/winfx/xaml/shared"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:views="clr-namespace:Wing.DesignPattern.View.CreationalPatterns"
+             d:DesignHeight="300"
+             d:DesignWidth="400"
+             mc:Ignorable="d">
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Themes/HamburgerMenuTemplate.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+
+            <!--  This is the template for all menu items. In this sample we use the glyph items.  -->
+            <DataTemplate x:Key="HamburgerMenuItem" DataType="{x:Type Controls:HamburgerMenuItem}">
+                <Grid Height="48">
+                    <TextBlock VerticalAlignment="Center" Margin="10,0,0,0"
+                               FontSize="16"
+                               Text="{Binding Label}" />
+                </Grid>
+            </DataTemplate>
+
+            <!--  This is the template for all option menu items.  -->
+            <DataTemplate x:Key="HamburgerOptionsMenuItem" DataType="{x:Type Controls:HamburgerMenuItem}">
+                <Grid Height="48" Visibility="Hidden">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="48" />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <ContentControl Grid.Column="0"
+                                    Content="{Binding Tag}"
+                                    Focusable="False"
+                                    IsTabStop="False" />
+                    <TextBlock Grid.Column="1"
+                               VerticalAlignment="Center"
+                               FontSize="16"
+                               Text="{Binding Label}" />
+                </Grid>
+            </DataTemplate>
+
+            <ObjectDataProvider x:Key="DisplayModeEnumValues"
+                                MethodName="GetValues"
+                                ObjectType="{x:Type Controls:SplitViewDisplayMode}">
+                <ObjectDataProvider.MethodParameters>
+                    <x:Type TypeName="Controls:SplitViewDisplayMode" />
+                </ObjectDataProvider.MethodParameters>
+            </ObjectDataProvider>
+
+            <ObjectDataProvider x:Key="VisibilityEnumValues"
+                                MethodName="GetValues"
+                                ObjectType="{x:Type Visibility}">
+                <ObjectDataProvider.MethodParameters>
+                    <x:Type TypeName="Visibility" />
+                </ObjectDataProvider.MethodParameters>
+            </ObjectDataProvider>
+
+            <Style x:Key="HamburgerMenuCreatorsItemStyle"
+                   BasedOn="{StaticResource HamburgerMenuItemStyle}"
+                   TargetType="{x:Type ListBoxItem}">
+                <Setter Property="Controls:ItemHelper.ActiveSelectionBackgroundBrush" Value="Transparent" />
+                <Setter Property="Controls:ItemHelper.ActiveSelectionForegroundBrush" Value="{DynamicResource AccentBaseColorBrush}" />
+                <Setter Property="Controls:ItemHelper.DisabledForegroundBrush" Value="{DynamicResource GrayNormalBrush}" />
+                <Setter Property="Controls:ItemHelper.DisabledSelectedBackgroundBrush" Value="Transparent" />
+                <Setter Property="Controls:ItemHelper.DisabledSelectedForegroundBrush" Value="{DynamicResource GrayNormalBrush}" />
+                <Setter Property="Controls:ItemHelper.HoverBackgroundBrush" Value="{DynamicResource GrayBrush9}" />
+                <Setter Property="Controls:ItemHelper.HoverSelectedBackgroundBrush" Value="{DynamicResource GrayBrush9}" />
+                <Setter Property="Controls:ItemHelper.SelectedBackgroundBrush" Value="Transparent" />
+                <Setter Property="Controls:ItemHelper.SelectedForegroundBrush" Value="{DynamicResource AccentBaseColorBrush}" />
+            </Style>
+
+            <Style x:Key="HamburgerMenuCreatorsStyle"
+                   BasedOn="{StaticResource {x:Type Controls:HamburgerMenu}}"
+                   TargetType="{x:Type Controls:HamburgerMenu}">
+                <Setter Property="ItemContainerStyle" Value="{StaticResource HamburgerMenuCreatorsItemStyle}" />
+                <Setter Property="OptionsItemContainerStyle" Value="{StaticResource HamburgerMenuCreatorsItemStyle}" />
+                <Setter Property="PaneBackground" Value="{DynamicResource WhiteBrush}" />
+                <Setter Property="PaneForeground" Value="{DynamicResource TextBrush}" />
+                <Setter Property="ShowSelectionIndicator" Value="True" />
+            </Style>
+
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <Grid>
+        <Border Margin="10 10 10 10"
+                BorderBrush="{DynamicResource GrayBrush7}"
+                BorderThickness="1">
+            <Controls:HamburgerMenu x:Name="HamburgerMenuControl"
+                                    HamburgerVisibility="Collapsed"
+                                    OpenPaneLength="160"
+                                    HamburgerHeight="0"
+                                    IsPaneOpen="True"                                    
+                                    ItemInvoked="HamburgerMenuControl_OnItemInvoked"
+                                    ItemTemplate="{StaticResource HamburgerMenuItem}"
+                                    OptionsItemTemplate="{StaticResource HamburgerOptionsMenuItem}"
+                                    SelectedIndex="0"
+                                    Style="{StaticResource HamburgerMenuCreatorsStyle}"
+                                    VerticalScrollBarOnLeftSide="False">
+                <!--  Items  -->
+                <Controls:HamburgerMenu.ItemsSource>
+                    <Controls:HamburgerMenuItemCollection>
+                        <Controls:HamburgerMenuItem Label="单例模式">
+                            <Controls:HamburgerMenuItem.Tag>
+                                <views:Singleton />
+                            </Controls:HamburgerMenuItem.Tag>
+                        </Controls:HamburgerMenuItem>
+                        <Controls:HamburgerMenuItem Label="抽象工厂模式" />
+                        <Controls:HamburgerMenuItem Label="建造者模式" />
+                        <Controls:HamburgerMenuItem Label="原型模式" />
+                        <Controls:HamburgerMenuItem Label="工厂方法模式" />
+                    </Controls:HamburgerMenuItemCollection>
+                </Controls:HamburgerMenu.ItemsSource>
+
+                <!--  Options  -->
+                <Controls:HamburgerMenu.OptionsItemsSource>
+                    <Controls:HamburgerMenuItemCollection>
+                        <Controls:HamburgerMenuGlyphItem Label="Settings">
+                            <Controls:HamburgerMenuGlyphItem.Tag>
+                                <iconPacks:PackIconMaterial Width="22"
+                                                            Height="22"
+                                                            HorizontalAlignment="Center"
+                                                            VerticalAlignment="Center"
+                                                            Kind="Settings" />
+                            </Controls:HamburgerMenuGlyphItem.Tag>
+                        </Controls:HamburgerMenuGlyphItem>
+                    </Controls:HamburgerMenuItemCollection>
+                </Controls:HamburgerMenu.OptionsItemsSource>
+
+                <!--  Content  -->
+                <Controls:HamburgerMenu.ContentTemplate>
+                    <DataTemplate>
+                        <Grid x:Name="ContentGrid">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="48" />
+                                <RowDefinition />
+                            </Grid.RowDefinitions>
+                            <Border Grid.Row="0">
+                                <TextBlock x:Name="Header" Margin="0,0,25,0"
+                                           HorizontalAlignment="Right"
+                                           VerticalAlignment="Center"
+                                           FontSize="24"
+                                           Text="{Binding Label}" Foreground="LightGray"/>
+                            </Border>
+                            <Controls:TransitioningContentControl Grid.Row="1"
+                                                                  Content="{Binding Tag}"
+                                                                  RestartTransitionOnContentChange="True"
+                                                                  Transition="Default">
+                            </Controls:TransitioningContentControl>
+                        </Grid>
+                    </DataTemplate>
+                </Controls:HamburgerMenu.ContentTemplate>
+            </Controls:HamburgerMenu>
+        </Border>
+    </Grid>
+
+</UserControl>

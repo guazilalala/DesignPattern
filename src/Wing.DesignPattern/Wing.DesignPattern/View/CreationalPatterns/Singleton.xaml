@@ -1,0 +1,83 @@
+﻿<UserControl x:Class="Wing.DesignPattern.View.CreationalPatterns.Singleton"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Wing.DesignPattern.View.CreationalPatterns"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300"
+             DataContext="{Binding Singleton, Source={StaticResource Locator}}">
+    <ScrollViewer>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Expander Grid.Row="0" BorderThickness="0" Margin="10,0,10,5" IsExpanded="False" Header="单例模式（懒汉式单例）">
+            <RichTextBox Padding="5"
+                         Background="Transparent"
+                         BorderThickness="0"
+                         IsDocumentEnabled="True"
+                         IsReadOnly="True">
+                <FlowDocument>
+                    <Paragraph>
+                        <Run>保证一个类仅有一个实例，并提供一个访问它的全局访问点。</Run>
+                    </Paragraph>
+                    <Paragraph>
+                        <Run>通常我们可以让一个全局变量使得一个对象被访问，但它不能防止你实例化多个对象。一个最好的办法就是，让类自身负责保存它的唯一实例。这个类可以保证没有其他实例可以被创建，并且它可以提供一个访问该实例的方法。</Run>
+                    </Paragraph>
+                    <Paragraph>
+                            <Run>单例模式因为Singleton类封装它的唯一实例，这样它可以严格地控制客户怎样访问它以及何时访问它。简单地说就是对唯一实例的受控访问。</Run>
+                    </Paragraph>
+                        <Paragraph>
+                            <Run Text="{Binding Code}"/>
+                        </Paragraph>
+                    </FlowDocument>
+            </RichTextBox>
+        </Expander>
+        <Expander Grid.Row="1" BorderThickness="0" Margin="10,0,10,5" IsExpanded="False" Header="多线程时的单例">
+                <StackPanel>
+                    <RichTextBox Padding="5"
+                         Background="Transparent"
+                         BorderThickness="0"
+                         IsDocumentEnabled="True"
+                         IsReadOnly="True">
+                        <FlowDocument>
+                            <Paragraph>
+                                <Run>多线程的程序中，多个线程同时访问Singleton类，调用GetInstance()方法,会有可能造成创建多个实例的。可以给线程方法加锁来外理。</Run>
+                            </Paragraph>
+                            <Paragraph>
+                                <Run>lock 是确保当一个线程位于代码的临界区时,另一个线程不进入临界区。如果其他线程试图进入锁定的代码，则它将一直等待（即被阻止），直到该对象被释放。</Run>
+                            </Paragraph>
+                            <Paragraph>
+                                <Run Text="{Binding LockSingletonCode}"/>
+                            </Paragraph>
+                        </FlowDocument>
+                    </RichTextBox>
+    
+                </StackPanel>
+        </Expander>
+        <Expander Grid.Row="2" BorderThickness="0" Margin="10,0,10,5" IsExpanded="False" Header="静态初始化（饿汉式单例）">
+            <RichTextBox Padding="5"
+                         Background="Transparent"
+                         BorderThickness="0"
+                         IsDocumentEnabled="True"
+                         IsReadOnly="True">
+                <FlowDocument>
+                    <Paragraph>
+                            <Run>C#与公共语言运行库也提供了一种‘静态初始化’方法，这种方法不需要开发人员显式地编写线程安全代码，即可解决多线程环境下它是不安全的问题。</Run>
+                    </Paragraph>
+                    <Paragraph>
+                            <Run>这样的实现与前面的示例类似，也是解决了单例模式试图解决的两个基本问题：全局访问和实例化控制，公共静态属性为访问实例提供了一个全局访问点。不同之处在于它依赖公共语运行库来初始化变量。</Run>
+                    </Paragraph>
+                        <Paragraph>
+                            <Run Text="{Binding Code2}"></Run>
+                        </Paragraph>
+                    </FlowDocument>
+            </RichTextBox>
+        </Expander>
+    </Grid>
+    </ScrollViewer>
+</UserControl>
