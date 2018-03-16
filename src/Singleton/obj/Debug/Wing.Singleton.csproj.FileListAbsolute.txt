@@ -1,0 +1,7 @@
+D:\GitHub\DesignPatternExample\src\Wing.DesignPattern\Singleton\bin\Debug\Singleton.exe.config
+D:\GitHub\DesignPatternExample\src\Wing.DesignPattern\Singleton\bin\Debug\Singleton.exe
+D:\GitHub\DesignPatternExample\src\Wing.DesignPattern\Singleton\bin\Debug\Singleton.pdb
+D:\GitHub\DesignPatternExample\src\Wing.DesignPattern\Singleton\obj\Debug\Wing.Singleton.csprojResolveAssemblyReference.cache
+D:\GitHub\DesignPatternExample\src\Wing.DesignPattern\Singleton\obj\Debug\Wing.Singleton.csproj.CoreCompileInputs.cache
+D:\GitHub\DesignPatternExample\src\Wing.DesignPattern\Singleton\obj\Debug\Singleton.exe
+D:\GitHub\DesignPatternExample\src\Wing.DesignPattern\Singleton\obj\Debug\Singleton.pdb

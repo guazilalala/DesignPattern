@@ -1,0 +1,101 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:Wing.DesignPattern.Resources">
+    <ControlTemplate x:Key="ScrollViewerTemplate" TargetType="ScrollViewer">
+        <ScrollViewer>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Expander Grid.Row="0" BorderThickness="0" Margin="10,0,10,5" IsExpanded="True" Header="定义" FontFamily="Microsoft YaHei UI Light">
+                    <RichTextBox Padding="5"
+                                         Background="Transparent"
+                                         BorderThickness="0"
+                                         IsDocumentEnabled="True"
+                                         IsReadOnly="True">
+                        <FlowDocument>
+                            <Paragraph>
+                                <Run Text="{Binding Definition}" FontFamily="Microsoft YaHei UI Light"/>
+                            </Paragraph>
+                        </FlowDocument>
+                    </RichTextBox>
+                </Expander>
+                <Expander Grid.Row="1" BorderThickness="0" Margin="10,0,10,5" IsExpanded="True" Header="UML类图" FontFamily="Microsoft YaHei UI Light">
+                    <Image Stretch="None" Source="{Binding UML}"/>
+                </Expander>
+                <Expander Grid.Row="2" BorderThickness="0" Margin="10,0,10,5" IsExpanded="True" Header="概述" FontFamily="Microsoft YaHei UI Light">
+                    <StackPanel>
+                        <RichTextBox Padding="5"
+                                             Background="Transparent"
+                                             BorderThickness="0"
+                                             IsDocumentEnabled="True"
+                                             IsReadOnly="True">
+                            <FlowDocument>
+                                <Paragraph>
+                                    <Run Text="{Binding Overview}" FontFamily="Microsoft YaHei UI Light"/>
+                                </Paragraph>
+                            </FlowDocument>
+                        </RichTextBox>
+                    </StackPanel>
+                </Expander>
+                <Expander Grid.Row="3" BorderThickness="0" Margin="10,0,10,5" IsExpanded="True" Header="应用场景" FontFamily="Microsoft YaHei UI Light">
+                    <RichTextBox Padding="5"
+                                         Background="Transparent"
+                                         BorderThickness="0"
+                                         IsDocumentEnabled="True"
+                                         IsReadOnly="True">
+                        <FlowDocument>
+                            <Paragraph>
+                                <Run Text="{Binding ApplicationScenario}" FontFamily="Microsoft YaHei UI Light"/>
+                            </Paragraph>
+                        </FlowDocument>
+                    </RichTextBox>
+                </Expander>
+                <Expander Grid.Row="4" BorderThickness="0" Margin="10,0,10,5" IsExpanded="True" Header="优点" FontFamily="Microsoft YaHei UI Light">
+                    <RichTextBox Padding="5"
+                                         Background="Transparent"
+                                         BorderThickness="0"
+                                         IsDocumentEnabled="True"
+                                         IsReadOnly="True">
+                        <FlowDocument>
+                            <Paragraph>
+                                <Run Text="{Binding Merit}" FontFamily="Microsoft YaHei UI Light"/>
+                            </Paragraph>
+                        </FlowDocument>
+                    </RichTextBox>
+                </Expander>
+                <Expander Grid.Row="5" BorderThickness="0" Margin="10,0,10,5" IsExpanded="True" Header="缺点" FontFamily="Microsoft YaHei UI Light">
+                    <RichTextBox Padding="5"
+                                         Background="Transparent"
+                                         BorderThickness="0"
+                                         IsDocumentEnabled="True"
+                                         IsReadOnly="True">
+                        <FlowDocument>
+                            <Paragraph>
+                                <Run Text="{Binding Defect}" FontFamily="Microsoft YaHei UI Light"/>
+                            </Paragraph>
+                        </FlowDocument>
+                    </RichTextBox>
+                </Expander>
+                <Expander Grid.Row="6" BorderThickness="0" Margin="10,0,10,5" IsExpanded="False" Header="示例代码" FontFamily="Microsoft YaHei UI Light">
+                    <avalonEdit:TextEditor
+                        xmlns:avalonEdit="http://icsharpcode.net/sharpdevelop/avalonedit"
+                        Name="textEditor"
+                        AllowDrop="True"
+                        SyntaxHighlighting="C#"
+                        IsReadOnly="True"
+                        ShowLineNumbers="True"
+                        FontFamily="Consolas"
+                        FontSize="10pt" Document="{Binding ExampleCode}"/>
+                </Expander>
+            </Grid>
+
+        </ScrollViewer>
+    </ControlTemplate>
+</ResourceDictionary>
