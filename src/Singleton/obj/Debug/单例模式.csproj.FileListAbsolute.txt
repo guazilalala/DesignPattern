@@ -4,3 +4,4 @@ D:\GitHub\DesignPatternExample\src\Singleton\bin\Debug\Singleton.pdb
 D:\GitHub\DesignPatternExample\src\Singleton\obj\Debug\单例模式.csproj.CoreCompileInputs.cache
 D:\GitHub\DesignPatternExample\src\Singleton\obj\Debug\Singleton.exe
 D:\GitHub\DesignPatternExample\src\Singleton\obj\Debug\Singleton.pdb
+D:\GitHub\DesignPatternExample\src\Singleton\obj\Debug\单例模式.csprojResolveAssemblyReference.cache

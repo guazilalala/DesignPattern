@@ -12,9 +12,6 @@ namespace Wing.DesignPattern.ViewModel.CreationalPatterns
 	{
 		public SingletonViewModel()
 		{
-			Code = System.IO.File.ReadAllText(@"./Model/CreationalPatterns/Singleton.cs");
-			LockSingletonCode = System.IO.File.ReadAllText(@"./Model/CreationalPatterns/LockSingleton.cs");
-			Code2 = System.IO.File.ReadAllText(@"./Model/CreationalPatterns/Singleton2.cs");
 		}
 		private string _code;
 

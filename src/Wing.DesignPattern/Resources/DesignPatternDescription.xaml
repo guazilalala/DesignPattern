@@ -19,7 +19,7 @@
                                          BorderThickness="0"
                                          IsDocumentEnabled="True"
                                          IsReadOnly="True">
-                        <FlowDocument>
+                        <FlowDocument LineHeight="20">
                             <Paragraph>
                                 <Run Text="{Binding Definition}" FontFamily="Microsoft YaHei UI Light"/>
                             </Paragraph>
@@ -29,16 +29,16 @@
                 <Expander Grid.Row="1" BorderThickness="0" Margin="10,0,10,5" IsExpanded="True" Header="UML类图" FontFamily="Microsoft YaHei UI Light">
                     <Image Stretch="None" Source="{Binding UML}"/>
                 </Expander>
-                <Expander Grid.Row="2" BorderThickness="0" Margin="10,0,10,5" IsExpanded="True" Header="概述" FontFamily="Microsoft YaHei UI Light">
+                <Expander Grid.Row="2" BorderThickness="0" Margin="10,0,10,5" IsExpanded="True" Header="参与者" FontFamily="Microsoft YaHei UI Light">
                     <StackPanel>
                         <RichTextBox Padding="5"
                                              Background="Transparent"
                                              BorderThickness="0"
                                              IsDocumentEnabled="True"
                                              IsReadOnly="True">
-                            <FlowDocument>
+                            <FlowDocument LineHeight="20">
                                 <Paragraph>
-                                    <Run Text="{Binding Overview}" FontFamily="Microsoft YaHei UI Light"/>
+                                    <Run Text="{Binding Participants}" FontFamily="Microsoft YaHei UI Light"/>
                                 </Paragraph>
                             </FlowDocument>
                         </RichTextBox>
@@ -50,7 +50,7 @@
                                          BorderThickness="0"
                                          IsDocumentEnabled="True"
                                          IsReadOnly="True">
-                        <FlowDocument>
+                        <FlowDocument LineHeight="20">
                             <Paragraph>
                                 <Run Text="{Binding ApplicationScenario}" FontFamily="Microsoft YaHei UI Light"/>
                             </Paragraph>
@@ -63,7 +63,7 @@
                                          BorderThickness="0"
                                          IsDocumentEnabled="True"
                                          IsReadOnly="True">
-                        <FlowDocument>
+                        <FlowDocument LineHeight="20">
                             <Paragraph>
                                 <Run Text="{Binding Merit}" FontFamily="Microsoft YaHei UI Light"/>
                             </Paragraph>
@@ -76,14 +76,14 @@
                                          BorderThickness="0"
                                          IsDocumentEnabled="True"
                                          IsReadOnly="True">
-                        <FlowDocument>
+                        <FlowDocument LineHeight="20">
                             <Paragraph>
                                 <Run Text="{Binding Defect}" FontFamily="Microsoft YaHei UI Light"/>
                             </Paragraph>
                         </FlowDocument>
                     </RichTextBox>
                 </Expander>
-                <Expander Grid.Row="6" BorderThickness="0" Margin="10,0,10,5" IsExpanded="False" Header="示例代码" FontFamily="Microsoft YaHei UI Light">
+                <Expander Grid.Row="6" BorderThickness="0" Margin="10,0,10,5" IsExpanded="False" Header="实践应用" FontFamily="Microsoft YaHei UI Light">
                     <avalonEdit:TextEditor
                         xmlns:avalonEdit="http://icsharpcode.net/sharpdevelop/avalonedit"
                         Name="textEditor"

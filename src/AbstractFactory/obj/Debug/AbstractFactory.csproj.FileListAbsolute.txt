@@ -1,0 +1,8 @@
+D:\GitHub\DesignPatternExample\src\AbstractFactory\bin\Debug\AbstractFactory.cs
+D:\GitHub\DesignPatternExample\src\AbstractFactory\bin\Debug\AbstractFactory.exe.config
+D:\GitHub\DesignPatternExample\src\AbstractFactory\bin\Debug\AbstractFactory.exe
+D:\GitHub\DesignPatternExample\src\AbstractFactory\bin\Debug\AbstractFactory.pdb
+D:\GitHub\DesignPatternExample\src\AbstractFactory\obj\Debug\AbstractFactory.csprojResolveAssemblyReference.cache
+D:\GitHub\DesignPatternExample\src\AbstractFactory\obj\Debug\AbstractFactory.csproj.CoreCompileInputs.cache
+D:\GitHub\DesignPatternExample\src\AbstractFactory\obj\Debug\AbstractFactory.exe
+D:\GitHub\DesignPatternExample\src\AbstractFactory\obj\Debug\AbstractFactory.pdb

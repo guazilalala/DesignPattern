@@ -13,3 +13,4 @@ D:\GitHub\DesignPatternExample\src\工厂方法模式\bin\Debug\工厂方法模�
 D:\GitHub\DesignPatternExample\src\工厂方法模式\obj\Debug\工厂方法模式.csproj.CoreCompileInputs.cache
 D:\GitHub\DesignPatternExample\src\工厂方法模式\obj\Debug\工厂方法模式.exe
 D:\GitHub\DesignPatternExample\src\工厂方法模式\obj\Debug\工厂方法模式.pdb
+D:\GitHub\DesignPatternExample\src\工厂方法模式\obj\Debug\工厂方法模式.csprojResolveAssemblyReference.cache

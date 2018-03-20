@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\GitHub\DesignPatternExample\src\Wing.DesignPattern\App.xaml
-7793729723
-11331309357
-22-1345322655
-80-465368308
-MainWindow.xaml;Resources\CustomTabControl.xaml;Resources\DesignPatternDescription.xaml;View\CreationalPatterns\AbstractFactory.xaml;View\CreationalPatterns\FactoryMethod.xaml;View\CreationalPatterns\HamburgerMenuCreationalPatterns.xaml;View\CreationalPatterns\Singleton.xaml;
+82001273666
+
+24-1077485309
+79-943994315
+MainWindow.xaml;Resources\CustomTabControl.xaml;Resources\DesignPatternDescription.xaml;View\CreationalPatterns\AbstractFactory.xaml;View\CreationalPatterns\FactoryMethod.xaml;View\CreationalPatterns\HamburgerMenuCreationalPatterns.xaml;View\CreationalPatterns\SimpleFactory.xaml;View\CreationalPatterns\Singleton.xaml;
 
 True
 

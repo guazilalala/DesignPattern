@@ -45,7 +45,8 @@ namespace Wing.DesignPattern.ViewModel
             SimpleIoc.Default.Register<MainViewModel>();
 			SimpleIoc.Default.Register<SingletonViewModel>();
 			SimpleIoc.Default.Register<FactoryMethodViewModel>();
-			SimpleIoc.Default.Register<AbstractFactoryViewModel>();			
+			SimpleIoc.Default.Register<AbstractFactoryViewModel>();
+			SimpleIoc.Default.Register<SimpleFactoryViewModel>();
 		}
 
         public MainViewModel Main
@@ -79,7 +80,15 @@ namespace Wing.DesignPattern.ViewModel
 				return ServiceLocator.Current.GetInstance<AbstractFactoryViewModel>();
 			}
 		}
-		
+
+		public SimpleFactoryViewModel SimpleFactory
+		{
+			get
+			{
+				return ServiceLocator.Current.GetInstance<SimpleFactoryViewModel>();
+			}
+		}
+
 		public static void Cleanup()
         {
             // TODO Clear the ViewModels

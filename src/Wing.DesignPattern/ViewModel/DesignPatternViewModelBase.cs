@@ -1,10 +1,15 @@
 ﻿using GalaSoft.MvvmLight;
 using ICSharpCode.AvalonEdit.Document;
-
+using System.IO;
+using System;
 namespace Wing.DesignPattern.ViewModel
 {
 	public abstract class DesignPatternViewModelBase : ViewModelBase
 	{
+		/// <summary>
+		/// 项目符号
+		/// </summary>
+		public readonly string Bullet = " • ";
 		private string _definition;
 		/// <summary>
 		/// 定义
@@ -31,16 +36,16 @@ namespace Wing.DesignPattern.ViewModel
 			}
 		}
 
-		private string _overview;
+		private string _participants;
 		/// <summary>
-		/// 概述
+		/// 参与者
 		/// </summary>
-		public virtual string Overview
+		public virtual string Participants
 		{
-			get => _overview; set
+			get => _participants; set
 			{
-				_overview = value;
-				RaisePropertyChanged(() => Overview);
+				_participants = value;
+				RaisePropertyChanged(() => Participants);
 			}
 		}
 
@@ -98,6 +103,20 @@ namespace Wing.DesignPattern.ViewModel
 				_exampleCode = value;
 				RaisePropertyChanged(() => ExampleCode);
 			}
+		}
+
+		/// <summary>
+		/// 读取代码文件,返回字符串
+		/// </summary>
+		/// <param name="path">文件路径</param>
+		/// <returns></returns>
+		public virtual string GetCode(string path)
+		{
+			if (File.Exists(path))
+			{
+				return File.ReadAllText(path);
+			}
+			return string.Empty;
 		}
 	}
 }

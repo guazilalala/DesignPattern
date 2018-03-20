@@ -1,0 +1,8 @@
+D:\GitHub\DesignPatternExample\src\FactoryMethod\bin\Debug\FactoryMethod.cs
+D:\GitHub\DesignPatternExample\src\FactoryMethod\bin\Debug\FactoryMethod.exe.config
+D:\GitHub\DesignPatternExample\src\FactoryMethod\bin\Debug\FactoryMethod.exe
+D:\GitHub\DesignPatternExample\src\FactoryMethod\bin\Debug\FactoryMethod.pdb
+D:\GitHub\DesignPatternExample\src\FactoryMethod\obj\Debug\FactoryMethod.csprojResolveAssemblyReference.cache
+D:\GitHub\DesignPatternExample\src\FactoryMethod\obj\Debug\FactoryMethod.csproj.CoreCompileInputs.cache
+D:\GitHub\DesignPatternExample\src\FactoryMethod\obj\Debug\FactoryMethod.exe
+D:\GitHub\DesignPatternExample\src\FactoryMethod\obj\Debug\FactoryMethod.pdb

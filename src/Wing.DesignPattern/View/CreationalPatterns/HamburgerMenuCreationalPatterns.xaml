@@ -93,7 +93,7 @@
                 BorderThickness="1">
             <Controls:HamburgerMenu x:Name="HamburgerMenuControl"
                                     HamburgerVisibility="Collapsed"
-                                    OpenPaneLength="160"
+                                    OpenPaneLength="230"
                                     HamburgerHeight="0"
                                     IsPaneOpen="True"                                    
                                     ItemInvoked="HamburgerMenuControl_OnItemInvoked"
@@ -105,21 +105,26 @@
                 <!--  Items  -->
                 <Controls:HamburgerMenu.ItemsSource>
                     <Controls:HamburgerMenuItemCollection>
-                        <Controls:HamburgerMenuItem Label="单例模式">
+                        <Controls:HamburgerMenuItem Label="单例">
                             <Controls:HamburgerMenuItem.Tag>
                                 <views:Singleton />
                             </Controls:HamburgerMenuItem.Tag>
                         </Controls:HamburgerMenuItem>
-                        <Controls:HamburgerMenuItem Label="抽象工厂模式" >
+                        <Controls:HamburgerMenuItem Label="AbstractFactory(抽象工厂)" >
                             <Controls:HamburgerMenuItem.Tag>
                                 <views:AbstractFactory />
                             </Controls:HamburgerMenuItem.Tag>
                         </Controls:HamburgerMenuItem>
-                        <Controls:HamburgerMenuItem Label="建造者模式" />
-                        <Controls:HamburgerMenuItem Label="原型模式" />
-                        <Controls:HamburgerMenuItem Label="工厂方法模式">
+                        <Controls:HamburgerMenuItem Label="建造者" />
+                        <Controls:HamburgerMenuItem Label="原型" />
+                        <Controls:HamburgerMenuItem Label="FactoryMethod(工厂方法)">
                             <Controls:HamburgerMenuItem.Tag>
                                 <views:FactoryMethod />
+                            </Controls:HamburgerMenuItem.Tag>
+                        </Controls:HamburgerMenuItem>
+                        <Controls:HamburgerMenuItem Label="SimpleFactory(简单工厂)">
+                            <Controls:HamburgerMenuItem.Tag>
+                                <views:SimpleFactory />
                             </Controls:HamburgerMenuItem.Tag>
                         </Controls:HamburgerMenuItem>
                     </Controls:HamburgerMenuItemCollection>

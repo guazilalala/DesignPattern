@@ -94,9 +94,10 @@
     <Compile Include="Model\CreationalPatterns\Singleton.cs">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
+    <Compile Include="ViewModel\CreationalPatterns\SimpleFactoryViewModel.cs" />
     <Compile Include="ViewModel\DesignPatternViewModelBase.cs" />
     <Compile Include="ViewModel\CreationalPatterns\AbstractFactoryViewModel.cs" />
-    <Compile Include="ViewModel\CreationalPatterns\FactoryMethod.cs" />
+    <Compile Include="ViewModel\CreationalPatterns\FactoryMethodModel.cs" />
     <Compile Include="ViewModel\CreationalPatterns\SingletonViewModel.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="ViewModel\ViewModelLocator.cs" />
@@ -108,6 +109,9 @@
     </Compile>
     <Compile Include="View\CreationalPatterns\HamburgerMenuCreationalPatterns.xaml.cs">
       <DependentUpon>HamburgerMenuCreationalPatterns.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\CreationalPatterns\SimpleFactory.xaml.cs">
+      <DependentUpon>SimpleFactory.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\CreationalPatterns\Singleton.xaml.cs">
       <DependentUpon>Singleton.xaml</DependentUpon>
@@ -144,6 +148,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="View\CreationalPatterns\SimpleFactory.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\CreationalPatterns\Singleton.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -177,31 +185,33 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Extensions\" />
     <Folder Include="View\BehavioralPatterns\" />
     <Folder Include="View\StructuralPatterns\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Singleton\单例模式.csproj">
-      <Project>{6fe7f3d1-166b-41ff-b9fe-3c4c8b96e00c}</Project>
-      <Name>单例模式</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\工厂方法模式\工厂方法模式.csproj">
-      <Project>{cc95d173-84bc-4e2e-87d1-ea2b3c969ddc}</Project>
-      <Name>工厂方法模式</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\抽象工厂模式\抽象工厂模式.csproj">
-      <Project>{e4a3fc23-e2fa-42df-b18c-86a64d90595e}</Project>
-      <Name>抽象工厂模式</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\简单工厂模式\简单工厂模式.csproj">
-      <Project>{3e35cfc2-4eb7-43ae-b549-831939945171}</Project>
-      <Name>简单工厂模式</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\AbstractFactory.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\SimpleFactory.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AbstractFactory\AbstractFactory.csproj">
+      <Project>{eeda8e1e-19d1-4c6f-8aac-782554d642da}</Project>
+      <Name>AbstractFactory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FactoryMethod\FactoryMethod.csproj">
+      <Project>{26677b21-34c4-48e0-a97b-3445ee3479b5}</Project>
+      <Name>FactoryMethod</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SimpleFactory\SimpleFactory.csproj">
+      <Project>{8dc33045-ea19-4ca5-8448-c6f1a2521b9e}</Project>
+      <Name>SimpleFactory</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

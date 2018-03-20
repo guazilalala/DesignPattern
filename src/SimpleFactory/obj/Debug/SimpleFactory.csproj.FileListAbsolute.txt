@@ -1,0 +1,8 @@
+D:\GitHub\DesignPatternExample\src\SimpleFactory\bin\Debug\SimpleFactory.cs
+D:\GitHub\DesignPatternExample\src\SimpleFactory\bin\Debug\SimpleFactory.exe.config
+D:\GitHub\DesignPatternExample\src\SimpleFactory\bin\Debug\SimpleFactory.exe
+D:\GitHub\DesignPatternExample\src\SimpleFactory\bin\Debug\SimpleFactory.pdb
+D:\GitHub\DesignPatternExample\src\SimpleFactory\obj\Debug\SimpleFactory.csproj.CoreCompileInputs.cache
+D:\GitHub\DesignPatternExample\src\SimpleFactory\obj\Debug\SimpleFactory.exe
+D:\GitHub\DesignPatternExample\src\SimpleFactory\obj\Debug\SimpleFactory.pdb
+D:\GitHub\DesignPatternExample\src\SimpleFactory\obj\Debug\SimpleFactory.csprojResolveAssemblyReference.cache
