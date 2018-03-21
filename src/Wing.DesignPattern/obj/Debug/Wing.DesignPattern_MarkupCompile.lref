@@ -1,10 +1,16 @@
-﻿D:\GitHub\DesignPatternExample\src\Wing.DesignPattern\obj\Debug\GeneratedInternalTypeHelper.g.cs
+﻿
 FD:\GitHub\DesignPatternExample\src\Wing.DesignPattern\App.xaml;;
 FD:\GitHub\DesignPatternExample\src\Wing.DesignPattern\MainWindow.xaml;;
-FD:\GitHub\DesignPatternExample\src\Wing.DesignPattern\Resources\DesignPatternDescription.xaml;;
-FD:\GitHub\DesignPatternExample\src\Wing.DesignPattern\View\CreationalPatterns\AbstractFactory.xaml;;
-FD:\GitHub\DesignPatternExample\src\Wing.DesignPattern\View\CreationalPatterns\FactoryMethod.xaml;;
-FD:\GitHub\DesignPatternExample\src\Wing.DesignPattern\View\CreationalPatterns\HamburgerMenuCreationalPatterns.xaml;;
-FD:\GitHub\DesignPatternExample\src\Wing.DesignPattern\View\CreationalPatterns\SimpleFactory.xaml;;
-FD:\GitHub\DesignPatternExample\src\Wing.DesignPattern\View\CreationalPatterns\Singleton.xaml;;
+FD:\GitHub\DesignPatternExample\src\Wing.DesignPattern\View\CreationalPatterns(创建型)\AbstractFactory.xaml;;
+FD:\GitHub\DesignPatternExample\src\Wing.DesignPattern\View\CreationalPatterns(创建型)\FactoryMethod.xaml;;
+FD:\GitHub\DesignPatternExample\src\Wing.DesignPattern\View\CreationalPatterns(创建型)\HamburgerMenuCreationalPatterns.xaml;;
+FD:\GitHub\DesignPatternExample\src\Wing.DesignPattern\View\CreationalPatterns(创建型)\SimpleFactory.xaml;;
+FD:\GitHub\DesignPatternExample\src\Wing.DesignPattern\View\CreationalPatterns(创建型)\Singleton.xaml;;
+FD:\GitHub\DesignPatternExample\src\Wing.DesignPattern\View\DesignPrinciples(设计原则)\HamburgerMenuDesignPrinciples.xaml;;
+FD:\GitHub\DesignPatternExample\src\Wing.DesignPattern\View\DesignPrinciples(设计原则)\DependenceInversionPrinciple.xaml;;
+FD:\GitHub\DesignPatternExample\src\Wing.DesignPattern\View\DesignPrinciples(设计原则)\InterfaceSegregationPrinciple.xaml;;
+FD:\GitHub\DesignPatternExample\src\Wing.DesignPattern\View\DesignPrinciples(设计原则)\LawOfDemeter.xaml;;
+FD:\GitHub\DesignPatternExample\src\Wing.DesignPattern\View\DesignPrinciples(设计原则)\OpenClosedPrinciple.xaml;;
+FD:\GitHub\DesignPatternExample\src\Wing.DesignPattern\View\DesignPrinciples(设计原则)\LiskovSubstitutionPrinciple.xaml;;
+FD:\GitHub\DesignPatternExample\src\Wing.DesignPattern\View\DesignPrinciples(设计原则)\SingleResponsibilityPrinciple.xaml;;
 

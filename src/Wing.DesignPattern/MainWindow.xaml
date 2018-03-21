@@ -6,8 +6,9 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
-        xmlns:view="clr-namespace:Wing.DesignPattern.View.CreationalPatterns"
-        mc:Ignorable="d"
+        xmlns:creationalPatternsView="clr-namespace:Wing.DesignPattern.View.CreationalPatterns"
+    xmlns:designPrinciplesView="clr-namespace:Wing.DesignPattern.View.DesignPrinciples"
+    mc:Ignorable="d"
         Title="设计模式例子" Height="600" Width="800" WindowStartupLocation="CenterScreen" >
 
     <Controls:MetroWindow.Resources>
@@ -31,10 +32,10 @@
     <Grid>
         <TabControl Controls:TabControlHelper.Underlined="TabPanel" Style="{StaticResource CustomTabControlStyle}">
             <TabItem Header="设计原则">
-                <TextBlock FontSize="30" Text="Content" />
+                <designPrinciplesView:HamburgerMenuDesignPrinciples />
             </TabItem>
             <TabItem Controls:ControlsHelper.HeaderFontSize="18" Header="创建型">
-                <view:HamburgerMenuCreationalPatterns />
+                <creationalPatternsView:HamburgerMenuCreationalPatterns />
             </TabItem>
             <TabItem Controls:ControlsHelper.HeaderFontSize="18" Header="结构型">
                 <TextBlock FontSize="30" Text="More content" />

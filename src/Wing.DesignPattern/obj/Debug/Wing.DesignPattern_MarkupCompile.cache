@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\GitHub\DesignPatternExample\src\Wing.DesignPattern\App.xaml
-82001273666
+16-1088731890
 
-201394888351
-79-943994315
-MainWindow.xaml;Resources\CustomTabControl.xaml;Resources\DesignPatternDescription.xaml;View\CreationalPatterns\AbstractFactory.xaml;View\CreationalPatterns\FactoryMethod.xaml;View\CreationalPatterns\HamburgerMenuCreationalPatterns.xaml;View\CreationalPatterns\SimpleFactory.xaml;View\CreationalPatterns\Singleton.xaml;
+34528378459
+80-1289799772
+MainWindow.xaml;Resources\CustomTabControl.xaml;Resources\DesignPrinciples.xaml;Resources\DesignPatternDescription.xaml;View\CreationalPatterns(创建型)\AbstractFactory.xaml;View\CreationalPatterns(创建型)\FactoryMethod.xaml;View\CreationalPatterns(创建型)\HamburgerMenuCreationalPatterns.xaml;View\CreationalPatterns(创建型)\SimpleFactory.xaml;View\CreationalPatterns(创建型)\Singleton.xaml;View\DesignPrinciples(设计原则)\HamburgerMenuDesignPrinciples.xaml;View\DesignPrinciples(设计原则)\DependenceInversionPrinciple.xaml;View\DesignPrinciples(设计原则)\InterfaceSegregationPrinciple.xaml;View\DesignPrinciples(设计原则)\LawOfDemeter.xaml;View\DesignPrinciples(设计原则)\OpenClosedPrinciple.xaml;View\DesignPrinciples(设计原则)\LiskovSubstitutionPrinciple.xaml;View\DesignPrinciples(设计原则)\SingleResponsibilityPrinciple.xaml;
 
 False
 

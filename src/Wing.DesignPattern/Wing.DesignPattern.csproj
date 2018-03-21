@@ -95,26 +95,54 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <Compile Include="ViewModel\CreationalPatterns\SimpleFactoryViewModel.cs" />
+    <Compile Include="ViewModel\DesignPrinciplesViewModelBase.cs" />
     <Compile Include="ViewModel\DesignPatternViewModelBase.cs" />
     <Compile Include="ViewModel\CreationalPatterns\AbstractFactoryViewModel.cs" />
     <Compile Include="ViewModel\CreationalPatterns\FactoryMethodModel.cs" />
     <Compile Include="ViewModel\CreationalPatterns\SingletonViewModel.cs" />
+    <Compile Include="ViewModel\DesignPrinciples\OpenClosedPrincipleViewModel.cs" />
+    <Compile Include="ViewModel\DesignPrinciples\SingleResponsibilityPrincipleViewModel.cs" />
+    <Compile Include="ViewModel\DesignPrinciples\LiskovSubstitutionPrincipleViewModel.cs" />
+    <Compile Include="ViewModel\DesignPrinciples\LawOfDemeterViewModel.cs" />
+    <Compile Include="ViewModel\DesignPrinciples\InterfaceSegregationPrincipleViewModel.cs" />
+    <Compile Include="ViewModel\DesignPrinciples\DependenceInversionPrincipleViewModel.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="ViewModel\ViewModelLocator.cs" />
-    <Compile Include="View\CreationalPatterns\AbstractFactory.xaml.cs">
+    <Compile Include="View\CreationalPatterns%28创建型%29\AbstractFactory.xaml.cs">
       <DependentUpon>AbstractFactory.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\CreationalPatterns\FactoryMethod.xaml.cs">
+    <Compile Include="View\CreationalPatterns%28创建型%29\FactoryMethod.xaml.cs">
       <DependentUpon>FactoryMethod.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\CreationalPatterns\HamburgerMenuCreationalPatterns.xaml.cs">
+    <Compile Include="View\CreationalPatterns%28创建型%29\HamburgerMenuCreationalPatterns.xaml.cs">
       <DependentUpon>HamburgerMenuCreationalPatterns.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\CreationalPatterns\SimpleFactory.xaml.cs">
+    <Compile Include="View\CreationalPatterns%28创建型%29\SimpleFactory.xaml.cs">
       <DependentUpon>SimpleFactory.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\CreationalPatterns\Singleton.xaml.cs">
+    <Compile Include="View\CreationalPatterns%28创建型%29\Singleton.xaml.cs">
       <DependentUpon>Singleton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\DesignPrinciples%28设计原则%29\HamburgerMenuDesignPrinciples.xaml.cs">
+      <DependentUpon>HamburgerMenuDesignPrinciples.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\DesignPrinciples%28设计原则%29\DependenceInversionPrinciple.xaml.cs">
+      <DependentUpon>DependenceInversionPrinciple.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\DesignPrinciples%28设计原则%29\InterfaceSegregationPrinciple.xaml.cs">
+      <DependentUpon>InterfaceSegregationPrinciple.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\DesignPrinciples%28设计原则%29\LawOfDemeter.xaml.cs">
+      <DependentUpon>LawOfDemeter.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\DesignPrinciples%28设计原则%29\OpenClosedPrinciple.xaml.cs">
+      <DependentUpon>OpenClosedPrinciple.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\DesignPrinciples%28设计原则%29\LiskovSubstitutionPrinciple.xaml.cs">
+      <DependentUpon>LiskovSubstitutionPrinciple.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\DesignPrinciples%28设计原则%29\SingleResponsibilityPrinciple.xaml.cs">
+      <DependentUpon>SingleResponsibilityPrinciple.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -132,27 +160,59 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Resources\DesignPrinciples.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Resources\DesignPatternDescription.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\CreationalPatterns\AbstractFactory.xaml">
+    <Page Include="View\CreationalPatterns%28创建型%29\AbstractFactory.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\CreationalPatterns\FactoryMethod.xaml">
+    <Page Include="View\CreationalPatterns%28创建型%29\FactoryMethod.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\CreationalPatterns\HamburgerMenuCreationalPatterns.xaml">
+    <Page Include="View\CreationalPatterns%28创建型%29\HamburgerMenuCreationalPatterns.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="View\CreationalPatterns\SimpleFactory.xaml">
+    <Page Include="View\CreationalPatterns%28创建型%29\SimpleFactory.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\CreationalPatterns\Singleton.xaml">
+    <Page Include="View\CreationalPatterns%28创建型%29\Singleton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\DesignPrinciples%28设计原则%29\HamburgerMenuDesignPrinciples.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\DesignPrinciples%28设计原则%29\DependenceInversionPrinciple.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\DesignPrinciples%28设计原则%29\InterfaceSegregationPrinciple.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\DesignPrinciples%28设计原则%29\LawOfDemeter.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\DesignPrinciples%28设计原则%29\OpenClosedPrinciple.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\DesignPrinciples%28设计原则%29\LiskovSubstitutionPrinciple.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\DesignPrinciples%28设计原则%29\SingleResponsibilityPrinciple.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -186,8 +246,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Extensions\" />
-    <Folder Include="View\BehavioralPatterns\" />
-    <Folder Include="View\StructuralPatterns\" />
+    <Folder Include="View\BehavioralPatterns%28行为型%29\" />
+    <Folder Include="View\StructuralPatterns%28结构型%29\" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\AbstractFactory.gif">
@@ -208,10 +268,19 @@
       <Project>{26677b21-34c4-48e0-a97b-3445ee3479b5}</Project>
       <Name>FactoryMethod</Name>
     </ProjectReference>
+    <ProjectReference Include="..\OpenClosedPrinciple\OpenClosedPrinciple.csproj">
+      <Project>{49dc7425-29f2-429f-9ba1-1e85dce3e529}</Project>
+      <Name>OpenClosedPrinciple</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SimpleFactory\SimpleFactory.csproj">
       <Project>{8dc33045-ea19-4ca5-8448-c6f1a2521b9e}</Project>
       <Name>SimpleFactory</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\OpenClosedPrinciple.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

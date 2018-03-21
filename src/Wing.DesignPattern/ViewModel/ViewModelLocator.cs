@@ -47,9 +47,60 @@ namespace Wing.DesignPattern.ViewModel
 			SimpleIoc.Default.Register<FactoryMethodViewModel>();
 			SimpleIoc.Default.Register<AbstractFactoryViewModel>();
 			SimpleIoc.Default.Register<SimpleFactoryViewModel>();
+
+			SimpleIoc.Default.Register<DependenceInversionPrincipleViewModel>();
+			SimpleIoc.Default.Register<InterfaceSegregationPrincipleViewModel>();
+			SimpleIoc.Default.Register<LawOfDemeterViewModel>();
+			SimpleIoc.Default.Register<LiskovSubstitutionPrincipleViewModel>();
+			SimpleIoc.Default.Register<OpenClosedPrincipleViewModel>();
+			SimpleIoc.Default.Register<SingleResponsibilityPrincipleViewModel>();
+
+		}
+		public DependenceInversionPrincipleViewModel DependenceInversionPrinciple
+		{
+			get
+			{
+				return ServiceLocator.Current.GetInstance<DependenceInversionPrincipleViewModel>();
+			}
+		}
+		public InterfaceSegregationPrincipleViewModel InterfaceSegregationPrinciple
+		{
+			get
+			{
+				return ServiceLocator.Current.GetInstance<InterfaceSegregationPrincipleViewModel>();
+			}
+		}
+		public LawOfDemeterViewModel LawOfDemeter
+		{
+			get
+			{
+				return ServiceLocator.Current.GetInstance<LawOfDemeterViewModel>();
+			}
+		}
+		public LiskovSubstitutionPrincipleViewModel LiskovSubstitutionPrinciple
+		{
+			get
+			{
+				return ServiceLocator.Current.GetInstance<LiskovSubstitutionPrincipleViewModel>();
+			}
+		}
+		public OpenClosedPrincipleViewModel OpenClosedPrinciple
+		{
+			get
+			{
+				return ServiceLocator.Current.GetInstance<OpenClosedPrincipleViewModel>();
+			}
+		}
+		public SingleResponsibilityPrincipleViewModel SingleResponsibilityPrinciple
+		{
+			get
+			{
+				return ServiceLocator.Current.GetInstance<SingleResponsibilityPrincipleViewModel>();
+			}
 		}
 
-        public MainViewModel Main
+
+		public MainViewModel Main
         {
             get
             {
