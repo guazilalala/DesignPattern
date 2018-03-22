@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/openclosedprinciple.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/dependenceinversionprinciple.jpg")]
 
 

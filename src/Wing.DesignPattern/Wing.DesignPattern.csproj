@@ -264,6 +264,10 @@
       <Project>{eeda8e1e-19d1-4c6f-8aac-782554d642da}</Project>
       <Name>AbstractFactory</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DependenceInversionPrinciple\DependenceInversionPrinciple.csproj">
+      <Project>{7ccaeb5e-1b14-41f2-847f-8eda256bc044}</Project>
+      <Name>DependenceInversionPrinciple</Name>
+    </ProjectReference>
     <ProjectReference Include="..\FactoryMethod\FactoryMethod.csproj">
       <Project>{26677b21-34c4-48e0-a97b-3445ee3479b5}</Project>
       <Name>FactoryMethod</Name>
@@ -279,6 +283,11 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\OpenClosedPrinciple.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\DependenceInversionPrinciple.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>

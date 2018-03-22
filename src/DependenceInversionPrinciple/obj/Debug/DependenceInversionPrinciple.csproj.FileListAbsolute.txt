@@ -1,0 +1,7 @@
+D:\GitHub\DesignPatternExample\src\DependenceInversionPrinciple\obj\Debug\DependenceInversionPrinciple.csprojResolveAssemblyReference.cache
+D:\GitHub\DesignPatternExample\src\DependenceInversionPrinciple\obj\Debug\DependenceInversionPrinciple.csproj.CoreCompileInputs.cache
+D:\GitHub\DesignPatternExample\src\DependenceInversionPrinciple\bin\Debug\DependenceInversionPrinciple.exe
+D:\GitHub\DesignPatternExample\src\DependenceInversionPrinciple\bin\Debug\DependenceInversionPrinciple.pdb
+D:\GitHub\DesignPatternExample\src\DependenceInversionPrinciple\obj\Debug\DependenceInversionPrinciple.exe
+D:\GitHub\DesignPatternExample\src\DependenceInversionPrinciple\obj\Debug\DependenceInversionPrinciple.pdb
+D:\GitHub\DesignPatternExample\src\DependenceInversionPrinciple\bin\Debug\DependenceInversionPrinciple.cs

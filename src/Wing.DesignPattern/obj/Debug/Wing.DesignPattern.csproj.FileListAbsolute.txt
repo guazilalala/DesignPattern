@@ -181,3 +181,6 @@ D:\GitHub\DesignPatternExample\src\Wing.DesignPattern\bin\Debug\OpenClosedPrinci
 D:\GitHub\DesignPatternExample\src\Wing.DesignPattern\bin\Debug\OpenClosedPrinciple.exe
 D:\GitHub\DesignPatternExample\src\Wing.DesignPattern\bin\Debug\OpenClosedPrinciple.pdb
 D:\GitHub\DesignPatternExample\src\Wing.DesignPattern\bin\Debug\OpenClosedPrinciple.exe.config
+D:\GitHub\DesignPatternExample\src\Wing.DesignPattern\bin\Debug\DependenceInversionPrinciple.cs
+D:\GitHub\DesignPatternExample\src\Wing.DesignPattern\bin\Debug\DependenceInversionPrinciple.exe
+D:\GitHub\DesignPatternExample\src\Wing.DesignPattern\bin\Debug\DependenceInversionPrinciple.pdb
